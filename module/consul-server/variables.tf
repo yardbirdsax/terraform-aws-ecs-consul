@@ -48,3 +48,8 @@ variable "security_group_ids" {
   type = list(string)
   description = "The security groups to attach to the tasks."
 }
+
+variable "vpc_id" {
+  type = string
+  description = "The ID of the VPC where the ECS tasks will be provisioned."
+}

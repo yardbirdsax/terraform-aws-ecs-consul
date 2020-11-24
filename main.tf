@@ -95,4 +95,5 @@ module "consul_server" {
   ecs_cluster_id = aws_ecs_cluster.ecs_cluster.id
   assign_public_ips = true
   security_group_ids = [ aws_security_group.consul.id ]
+  vpc_id = aws_vpc.vpc.id
 }
